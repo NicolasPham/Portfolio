@@ -1,26 +1,26 @@
 :root {
   .theme-light {
-    --bg: #white;
-    --textColor: #e5e5cb;
+    --bg: #f0e9d2;
+    --textColor: ##1a120b;
     --textColor2: #e5ba73;
-
-    --h1-fontsize: 2.5rem;
-    --h2-fontsize: 2rem;
-    --h3-fontsize: 1.5rem;
   }
 
   .theme-dark {
     --bg: #1a120b;
     --textColor: #e5e5cb;
-    --textColor2: #e5ba73;
-
-    --h1-fontsize: 2.5rem;
-    --h2-fontsize: 2rem;
-    --h3-fontsize: 1.5rem;
+    --textColor2: #f0b454;
   }
+  --h1: 2.5rem;
+  --h2: 2rem;
+  --h3: 1.1rem;
+
+  --font1: "Abel", sans-serif;
+  --font2: "Courgette", cursive;
+  --font3: "Secular One", sans-serif;
 }
 
 .app {
   height: 100vh;
   background-color: var(--bg);
+  font-family: var(--font1);
 }

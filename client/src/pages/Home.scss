@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: var(--h1);
+      color: var(--textColor);
+
+      font {
+        color: var(--textColor2);
+        font-weight: 700;
+      }
+
+      &:first-child {
+        font-family: var(--font2);
+      }
+
+      &:last-child {
+        font-family: var(--font3)
+      }
+    }
+  }
+  .right {
+    img {
+      height: 80vh;
+    }
+  }
+}
