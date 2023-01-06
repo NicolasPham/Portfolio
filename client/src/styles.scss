@@ -1,0 +1,26 @@
+:root {
+  .theme-light {
+    --bg: #white;
+    --textColor: #e5e5cb;
+    --textColor2: #e5ba73;
+
+    --h1-fontsize: 2.5rem;
+    --h2-fontsize: 2rem;
+    --h3-fontsize: 1.5rem;
+  }
+
+  .theme-dark {
+    --bg: #1a120b;
+    --textColor: #e5e5cb;
+    --textColor2: #e5ba73;
+
+    --h1-fontsize: 2.5rem;
+    --h2-fontsize: 2rem;
+    --h3-fontsize: 1.5rem;
+  }
+}
+
+.app {
+  height: 100vh;
+  background-color: var(--bg);
+}
