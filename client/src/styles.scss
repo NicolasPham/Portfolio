@@ -1,14 +1,18 @@
 :root {
   .theme-light {
     --bg: #f0e9d2;
-    --textColor: ##1a120b;
+    --navbar: #1a120b;
+    --textColor: #1a120b;
     --textColor2: #e5ba73;
+    --cardBg: #191919;
   }
 
   .theme-dark {
     --bg: #1a120b;
+    --navbar: #f0e9d2;
     --textColor: #e5e5cb;
     --textColor2: #f0b454;
+    --cardBg: #e5e5cb;
   }
   --h1: 2.5rem;
   --h2: 2rem;
@@ -20,7 +24,7 @@
 }
 
 .app {
-  height: 100vh;
+  height: 100%;
   background-color: var(--bg);
   font-family: var(--font1);
 }

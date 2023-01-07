@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 //Import icons
@@ -15,22 +16,30 @@ const Navbar = (props) => {
       onMouseEnter={() => setShowName(true)}
       onMouseLeave={() => setShowName(false)}
     >
-      <div className="navSection">
-        <AiFillHome className="navIcon" />
-        {showName && <span>Home</span>}
-      </div>
-      <div className="navSection">
-        <AiFillProject className="navIcon" />
-        {showName && <span>Projects</span>}
-      </div>
-      <div className="navSection">
-        <FaUser className="navIcon" />
-        {showName && <span>About</span>}
-      </div>
-      <div className="navSection">
-        <AiFillMail className="navIcon" />
-        {showName && <span>Contact</span>}
-      </div>
+      <Link to="/" className="link">
+        <div className="navSection">
+          <AiFillHome className="navIcon" />
+          {showName && <span>Home</span>}
+        </div>
+      </Link>
+      <Link to="/projects" className="link">
+        <div className="navSection">
+          <AiFillProject className="navIcon" />
+          {showName && <span>Projects</span>}
+        </div>
+      </Link>
+      <Link to="/about" className="link">
+        <div className="navSection">
+          <FaUser className="navIcon" />
+          {showName && <span>About</span>}
+        </div>
+      </Link>
+      <Link to="/contact" className="link">
+        <div className="navSection">
+          <AiFillMail className="navIcon" />
+          {showName && <span>Contact</span>}
+        </div>
+      </Link>
       <div className="navSection" onClick={props.changeMode}>
         {props.mode ? (
           <BsFillSunFill className="navIcon" />
