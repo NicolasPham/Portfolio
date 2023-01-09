@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.scss";
+import { motion } from "framer-motion";
 
 import { hello } from "../assets";
 
@@ -7,16 +8,36 @@ const Home = () => {
   return (
     <div className="home">
       <div className="left">
-        <span>Hi, I'm</span>
-        <span>
+        <motion.span
+          initial={{ x: -1000 }}
+          animate={{ x: 0 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 1 }}
+        >
+          Hi, I'm
+        </motion.span>
+        <motion.span
+          initial={{ x: -1000 }}
+          animate={{ x: 0 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 2 }}
+        >
           Nicolas <font>Pham</font>
-        </span>
-        <span>
+        </motion.span>
+        <motion.span
+          initial={{ x: 2000 }}
+          animate={{ x: 0 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 4 }}
+        >
           A <font>FullStack</font> Developer
-        </span>
+        </motion.span>
       </div>
       <div className="right">
-        <img src={hello} alt="" />
+        <motion.img
+          src={hello}
+          alt=""
+          initial={{ y: -1000 }}
+          animate={{ y: 0 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 1 }}
+        />
         <div />
       </div>
     </div>
