@@ -42,6 +42,7 @@ const About = () => {
                 useContext
               </p>
               <p>- SASS to efficiently manage styles</p>
+              <p>- CSS Framework such as Bootstrap, Tailwind</p>
             </div>
           </div>
         </div>

@@ -1,54 +1,94 @@
 .projects {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   padding: 40px;
+  height: 100vh;
 
-  .card {
-    padding: 10px;
-    margin: 10px;
+  h1 {
+    color: var(--textColor3);
+    align-self: center;
+    font-family: var(--font3);
+  }
+
+  .content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: var(--cardBg);
-    width: 200px;
-    border-radius: 10px;
-    cursor: pointer;
-    z-index: 1;
-    box-shadow: 0px 0px 5px 2px gray;
+    gap: 20px;
 
-    &:hover {
-      transform: translateY(5px) scale(1.2);
-      z-index: 10;
-    }
-
-    .card_info {
+    .container {
       display: flex;
+      flex: 2;
       flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-      h1 {
-        color: var(--textColor2);
-      }
-      .skill {
+      margin-top: 20px;
+
+      .card {
+        background-color: var(--cardBg);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+        justify-content: center;
+        cursor: pointer;
 
         span {
-          color: gray;
-          border: 0.2px solid gray;
-          padding: 2px 4px;
-          border-radius: 5px;
+          color: var(--textP);
         }
       }
     }
 
-    img {
-      width: 200px;
-      object-fit: contain;
-      border-radius: 10px;
+    .detail {
+      flex: 9;
+
+      .card_detail {
+        background-color: var(--cardBg);
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-radius: 10px;
+        height: 400px;
+
+        img {
+          width: 50%;
+          object-fit: cover;
+          border-radius: 10px;
+          flex: 7;
+        }
+
+        .desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex: 5;
+
+          h2 {
+            color: var(--textColor2);
+          }
+          p {
+            color: var(--textColor4);
+          }
+
+          .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 10px;
+            gap: 10px;
+
+            span {
+              color: var(--textColor3);
+              border: 0.3px solid var(--textColor3);
+              padding: 2px 5px;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
     }
   }
+}
+
+.visible {
+  visibility: hidden;
 }

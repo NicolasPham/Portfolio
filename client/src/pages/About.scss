@@ -7,6 +7,7 @@
 
   h1 {
     color: var(--textColor4);
+    font-family: var(--font3);
   }
 
   .skills {
@@ -32,6 +33,7 @@
       h2 {
         margin-bottom: 10px;
         color: var(--textColor4);
+        font-family: var(--font1);
       }
 
       .contain {
@@ -48,7 +50,7 @@
           span {
             display: flex;
             align-items: center;
-            color: var(--textColor2);
+            color: var(--textP);
             .check {
               margin: 5px;
               color: var(--textColor3);
@@ -58,7 +60,7 @@
 
         .details {
           flex: 8;
-          color: var(--textColor4);
+          color: var(--textP);
 
           p {
             margin: 3px 0;
