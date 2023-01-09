@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.scss";
 import { projects } from "../constant/projects";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [id, setId] = useState();
@@ -18,17 +19,35 @@ const Projects = () => {
       }
     }
   };
-  console.log(projects[id]);
+
+  const variants = {
+    show: (i) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: i * 0.3,
+      },
+    }),
+    hidden: { opacity: 0, x: -200 },
+  };
 
   return (
     <div className="projects">
       <h1>MY PROJECTS</h1>
       <div className="content">
         <div className="container">
-          {projects.map((project, key) => (
-            <div className="card" key={key} onClick={handleClick}>
+          {projects.map((project, i) => (
+            <motion.div
+              className="card"
+              key={i}
+              onClick={handleClick}
+              custom={i}
+              initial="hidden"
+              animate="show"
+              variants={variants}
+            >
               <span>{project.title}</span>
-            </div>
+            </motion.div>
           ))}
         </div>
 
