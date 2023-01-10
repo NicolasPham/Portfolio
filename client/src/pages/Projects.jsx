@@ -25,7 +25,7 @@ const Projects = () => {
       opacity: 1,
       x: 0,
       transition: {
-        delay: i * 0.3,
+        delay: i * 0.2,
       },
     }),
     hidden: { opacity: 0, x: -200 },
@@ -46,7 +46,7 @@ const Projects = () => {
               animate="show"
               variants={variants}
             >
-              <span>{project.title}</span>
+              {project.title}
             </motion.div>
           ))}
         </div>

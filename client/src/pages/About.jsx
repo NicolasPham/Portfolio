@@ -1,10 +1,15 @@
 import React from "react";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import "./About.scss";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="about">
+    <motion.div
+      className="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <h1>ABOUT ME</h1>
       <div className="skills">
         <div className="section">
@@ -85,7 +90,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

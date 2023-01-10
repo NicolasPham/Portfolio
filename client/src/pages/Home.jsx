@@ -9,23 +9,23 @@ const Home = () => {
     <div className="home">
       <div className="left">
         <motion.span
-          initial={{ x: -1000 }}
-          animate={{ x: 0 }}
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1, delay: 1 }}
         >
           Hi, I'm
         </motion.span>
         <motion.span
-          initial={{ x: -1000 }}
-          animate={{ x: 0 }}
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1, delay: 2 }}
         >
           Nicolas <font>Pham</font>
         </motion.span>
         <motion.span
-          initial={{ x: 2000 }}
-          animate={{ x: 0 }}
-          transition={{ ease: "easeOut", duration: 1, delay: 4 }}
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity:1 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 3 }}
         >
           A <font>FullStack</font> Developer
         </motion.span>
