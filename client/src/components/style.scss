@@ -1,13 +1,10 @@
 .navbar {
   background-color: var(--navbar);
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 20px;
-  width: fit-content;
-  position: fixed;
-  border-radius: 5px;
-  top: 25%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 40px;
+
   font-family: var(--font3);
   filter: blur(1px) opacity(0.3);
   z-index: 11;
@@ -16,15 +13,27 @@
     filter: blur(0) opacity(0.7);
   }
 
+
+  .logo {
+    font-family: var(--font1);
+    font-size: var(--h1);
+    font-weight: bold;
+    color: var(--textColor2);
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  
   .navSection {
     // padding: 5px 20px;
     cursor: pointer;
 
     display: flex;
-    justify-content: flex-start;
 
     color: var(--bg);
-    font-size: var(--h3-fontsize);
+    font-size: var(--h2);
 
     &:hover {
       transform: translateY(-2px) scale(1.1);
@@ -38,6 +47,7 @@
       padding: 10px;
     }
   }
+    }
 }
 
 

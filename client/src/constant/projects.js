@@ -1,17 +1,17 @@
-import { workHoobank, workElectricCar, workTinDog } from "../assets";
+import { workHoobank, workElectricCar, workTinDog, workSocialMedia,workBlogApp } from "../assets";
 
 export const projects = [
   {
     title: "Social Media",
     desc: "Some description in here...",
-    img: "",
+    img: workSocialMedia,
     skills: ["React", "Redux"],
   },
   {
     title: "Blog App",
     desc: "Some description in here...",
-    img: "",
-    skills: ["React", "MongoDB", "NodeJs", "Express", "Axios"],
+    img: workBlogApp,
+    skills: ["React", "MySQL", "NodeJs", "Express", "Axios"],
   },
   {
     title: "Yelp Camp",

@@ -1,54 +1,57 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
 
 //Import icons
-import { AiFillHome, AiFillProject, AiFillMail } from "react-icons/ai";
-import { FaUser } from "react-icons/fa";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 
+const nav = [
+  {
+    name: "HOME",
+    link: '/',
+  },
+  {
+    name: "PROJECTS",
+    link: '/projects',
+  },
+  {
+    name: "ABOUT",
+    link: '/about',
+  },
+  {
+    name: "CONTACT",
+    link: '/contact',
+  },
+]
+
 const Navbar = (props) => {
-  const [showName, setShowName] = useState(false);
 
   return (
-    <div
-      className="navbar"
-      onMouseEnter={() => setShowName(true)}
-      onMouseLeave={() => setShowName(false)}
-    >
-      <Link to="/" className="link">
+    <nav className="navbar">
+      <div className="logo">
+        <span>NICOLAS PHAM</span>
+      </div>
+
+      <div className="nav">
+          
+      {nav.map((item, index) => (
+        <Link to={item.link} className="link">
         <div className="navSection">
-          <AiFillHome className="navIcon" />
-          {showName && <span>Home</span>}
+          {item.name}
         </div>
-      </Link>
-      <Link to="/projects" className="link">
-        <div className="navSection">
-          <AiFillProject className="navIcon" />
-          {showName && <span>Projects</span>}
-        </div>
-      </Link>
-      <Link to="/about" className="link">
-        <div className="navSection">
-          <FaUser className="navIcon" />
-          {showName && <span>About</span>}
-        </div>
-      </Link>
-      <Link to="/contact" className="link">
-        <div className="navSection">
-          <AiFillMail className="navIcon" />
-          {showName && <span>Contact</span>}
-        </div>
-      </Link>
+        </Link>
+      ))}
+
+
       <div className="navSection" onClick={props.changeMode}>
         {props.mode ? (
           <BsFillSunFill className="navIcon" />
-        ) : (
-          <BsFillMoonFill className="navIcon" />
-        )}
-        {showName && <span>Mode</span>}
+          ) : (
+            <BsFillMoonFill className="navIcon" />
+            )}
+            </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

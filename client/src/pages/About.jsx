@@ -38,6 +38,7 @@ const About = () => {
                 Redux
               </span>
             </div>
+            <hr />
             <div className="details">
               <p>- Proficient using HTML, CSS, Javascript</p>
               <p>- React Components to create similar objects</p>
@@ -78,6 +79,7 @@ const About = () => {
                 MySQL
               </span>
             </div>
+            <hr />
             <div className="details">
               <p>- Nodejs to create RESTful API app</p>
               <p>- Bcrypt to hash password</p>
