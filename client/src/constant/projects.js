@@ -2,19 +2,19 @@ import { workHoobank, workElectricCar, workTinDog, workSocialMedia,workBlogApp }
 
 export const projects = [
   {
-    title: "Social Media",
+    title: "Fullstack MERN Social Media",
     desc: "Some description in here...",
     img: workSocialMedia,
-    skills: ["React", "Redux"],
+    skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
   },
   {
-    title: "Blog App",
+    title: "Fullstack MySQL Blog App",
     desc: "Some description in here...",
     img: workBlogApp,
     skills: ["React", "MySQL", "NodeJs", "Express", "Axios"],
   },
   {
-    title: "Yelp Camp",
+    title: "FullStack Yelp Camp",
     desc: "Some description in here...",
     img: "",
     skills: ["NodeJs", "Express", "EJS", "MongoDB"],
