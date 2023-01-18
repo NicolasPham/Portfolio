@@ -28,9 +28,11 @@ const Navbar = (props) => {
 
   return (
     <nav className="navbar">
+      <Link to='/' className="link" >
       <div className="logo">
         <span>NICOLAS PHAM</span>
       </div>
+      </Link>
 
       <div className="nav">
           
