@@ -78,7 +78,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-              <img src={projects[id].img} alt="" />
+              <iframe src={projects[id].url} frameborder="0"></iframe>
             </div>
           )}
         </div>

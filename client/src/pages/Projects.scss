@@ -42,12 +42,6 @@
     .detail {
       flex: 9;
 
-      cursor: pointer;
-
-      &:hover {
-        filter: blur(2px);
-        transform: translateY(-3px);
-      }
 
       .card_detail {
         background-color: var(--cardBg);
@@ -58,7 +52,7 @@
         border-radius: 10px;
         height: 400px;
 
-        img {
+        iframe {
           width: 50%;
           object-fit: cover;
           border-radius: 10px;
