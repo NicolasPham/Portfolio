@@ -42,10 +42,18 @@
     .detail {
       flex: 9;
 
+      cursor: pointer;
+
+      &:hover {
+        filter: blur(2px);
+        transform: translateY(-3px);
+      }
+
       .card_detail {
         background-color: var(--cardBg);
         display: flex;
         justify-content: space-between;
+        gap: 20px;
         padding: 20px;
         border-radius: 10px;
         height: 400px;
@@ -64,13 +72,42 @@
           flex: 5;
 
           h2 {
+            flex: 1;
             color: var(--textColor2);
           }
-          p {
-            color: var(--textColor4);
-          }
 
+          .content {
+            flex: 8 ;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            p {
+              color: var(--textColor4);
+              font-weight: 700;
+              text-align: justify;
+            }
+  
+            
+  
+            .function {
+              hr {
+              border: none;
+              border-bottom: .5px solid lightgray;
+              margin-bottom: 20px;
+            }
+
+              p {
+                font-size: 14px;
+                color: gray;
+  
+              }
+            }
+          }
+          
           .skills {
+            flex: .5;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;

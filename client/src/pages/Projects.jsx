@@ -56,7 +56,22 @@ const Projects = () => {
             <div className="card_detail">
               <div className="desc">
                 <h2>{projects[id].title}</h2>
-                <p>{projects[id].desc}</p>
+                <div className="content">
+                  <p>{projects[id].desc}</p>
+
+                  <div className="function">
+                  <hr/>
+                    {projects[id].highlightFront.map((skill, index) => (
+                      <p key={index}>- {skill}</p>
+                    ))}
+                  </div>
+                  <div className="function">
+                    {projects[id].highlightBack.map((skill, index) => (
+                      <p key={index}>- {skill}</p>
+                    ))}
+                  </div>
+                </div>
+                
                 <div className="skills">
                   {projects[id].skills.map((skill, key) => (
                     <span key={key}>{skill}</span>
