@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Projects.scss";
 import { projects } from "../constant/projects";
 import { motion } from "framer-motion";
+import Slider from "../components/Slider";
 
 const Projects = () => {
   const [id, setId] = useState();
@@ -78,7 +79,9 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-              <iframe src={projects[id].url} frameborder="0"></iframe>
+              <div className="slider">
+              <Slider projectId = {id}/>
+              </div>
             </div>
           )}
         </div>
