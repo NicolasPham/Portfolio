@@ -3,9 +3,10 @@ import "./Projects.scss";
 import { projects } from "../constant/projects";
 import { motion } from "framer-motion";
 import Slider from "../components/Slider";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const Projects = () => {
-  const [id, setId] = useState();
+  const [id, setId] = useState(0);
   const handleClick = (e) => {
     const cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
@@ -32,6 +33,11 @@ const Projects = () => {
     hidden: { opacity: 0, x: -200 },
   };
 
+  /***************Show iframe***************************/
+  const [showFrame, setShoWFrame] = useState(false);
+  console.log(showFrame);
+
+  /*****************************************************/
   return (
     <div className="projects">
       <h1>MY PROJECTS</h1>
@@ -61,7 +67,7 @@ const Projects = () => {
                   <p>{projects[id].desc}</p>
 
                   <div className="function">
-                  <hr/>
+                    <hr />
                     {projects[id].highlightFront.map((skill, index) => (
                       <p key={index}>- {skill}</p>
                     ))}
@@ -71,8 +77,21 @@ const Projects = () => {
                       <p key={index}>- {skill}</p>
                     ))}
                   </div>
+
+                  <div className="button">
+                    <button onClick={() => setShoWFrame(true)}>
+                      Live Demo
+                    </button>
+                    <a
+                      href={projects[id].source}
+                      className="link"
+                      target="_blank"
+                    >
+                      <button>Source Code</button>
+                    </a>
+                  </div>
                 </div>
-                
+
                 <div className="skills">
                   {projects[id].skills.map((skill, key) => (
                     <span key={key}>{skill}</span>
@@ -80,12 +99,22 @@ const Projects = () => {
                 </div>
               </div>
               <div className="slider">
-              <Slider projectId = {id}/>
+                <Slider projectId={id} />
               </div>
             </div>
           )}
         </div>
       </div>
+
+      {showFrame && (
+        <div className="iframe" onClick={() => setShoWFrame(false)}>
+          <AiFillCloseCircle
+            className="iframeIcon"
+            onClick={() => setShoWFrame(false)}
+          />
+          <iframe src={projects[id].url}></iframe>
+        </div>
+      )}
     </div>
   );
 };
