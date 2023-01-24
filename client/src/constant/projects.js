@@ -1,4 +1,4 @@
-import { workHoobank, workElectricCar, workTinDog, workSocialMedia,workBlogApp } from "../assets";
+import * as social from '../assets/socialMedia';
 
 export const projects = [
   {
@@ -8,6 +8,7 @@ export const projects = [
     highlightBack: [],
     url: "https://nicolas-pham.online/",
     skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
+    img: [social.home, social.homeDark, social.login, social.register, social.userInfo],
   },
   {
     title: "Fullstack MERN Booking App",
@@ -16,6 +17,7 @@ export const projects = [
     highlightBack: ["Create Schemas with various types of data in Mongo Atlas (Cloud MongoDB)", "Use router to create a semantic methods for different actions in backend side", "Hash password then stored it in the DB instead of raw password", "Use multer to upload pictures combined with cloudinary to stored pictures on cloud", "Use axios to connect API side and Client side to create a full stack application"],
     url: "https://nicolas-pham.online/",
     skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
+    img: [],
   },
   {
     title: "Fullstack MySQL Blog App",
@@ -24,6 +26,7 @@ export const projects = [
     highlightBack: ["Create table data using MySQL WorkBench", "Use SQL to Create, Read, Update and Delete data", "Using mysql node package to combine SQL into React app to interact with database"],
     url: 'https://nicolas-pham.online/',
     skills: ["React", "MySQL", "NodeJs", "Express", "Axios"],
+    img: [],
   },
   {
     title: "BackEnd NodeJs Yelp Camp",
@@ -32,6 +35,7 @@ export const projects = [
     highlightBack: ["Using express to create APIs for the application", "Manage routes and methods by using epxress-router", "Use multer to upload images into local storage", "Use session to store basic user info data", "Use bcrypt to hash password and compare password", "Use password for logging in methods"],
     url: "https://nicolas-pham.online/",
     skills: ["NodeJs", "Express", "EJS", "MongoDB"],
+    img: [],
   },
   {
     title: "UI/UX Electric Car",
@@ -40,6 +44,7 @@ export const projects = [
     highlightBack: [],
     url: "https://electric-car.nicolas-pham.online/",
     skills: ["Tailwind", "Vite", "React-Icons", "JS"],
+    img: [],
   },
   {
     title: "UI/UX Hoobank",
@@ -48,6 +53,7 @@ export const projects = [
     highlightBack: [],
     url: "https://hoobank.nicolas-pham.online/",
     skills: ["HTML", "CSS", "JS"],
+    img: [],
   },
   {
     title: "TinDog",
@@ -56,5 +62,6 @@ export const projects = [
     highlightBack: [],
     url: "https://tindog.nicolas-pham.online/",
     skills: ["HTML", "CSS", "JS", "Bootstrap"],
+    img: [],
   },
 ];

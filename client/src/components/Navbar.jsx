@@ -37,7 +37,7 @@ const Navbar = (props) => {
       <div className="nav">
           
       {nav.map((item, index) => (
-        <Link to={item.link} className="link">
+        <Link to={item.link} className="link" key={index}>
         <div className="navSection">
           {item.name}
         </div>
