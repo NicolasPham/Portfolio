@@ -1,5 +1,6 @@
 import * as social from "../assets/socialMedia";
 import * as booking from "../assets/booking";
+import * as blog from "../assets/blog";
 
 export const projects = [
   {
@@ -61,29 +62,29 @@ export const projects = [
     ],
     url: "https://nicolas-pham.online/",
     skills: ["React", "MySQL", "NodeJs", "Express", "Axios"],
-    img: [],
+    img: [blog.blogApp1, blog.blogApp2, blog.blogApp3],
     source: "https://github.com/NicolasPham/BlogApp",
   },
-  {
-    title: "BackEnd NodeJs Yelp Camp",
-    desc: "Camping website where you can create an account, log in, and post your own camping site for rent. You can set up price and other information, then edit later after passing authenticated and authorized process. As a user, you can leave review and rate the campsite as well so other people can see it",
-    highlightFront: [
-      "Using EJS Engine to render the basic function campsite",
-      "Create boiler plate that apply to different pages",
-    ],
-    highlightBack: [
-      "Using express to create APIs for the application",
-      "Manage routes and methods by using epxress-router",
-      "Use multer to upload images into local storage",
-      "Use session to store basic user info data",
-      "Use bcrypt to hash password and compare password",
-      "Use password for logging in methods",
-    ],
-    url: "https://nicolas-pham.online/",
-    skills: ["NodeJs", "Express", "EJS", "MongoDB"],
-    img: [],
-    source: "",
-  },
+  // {
+  //   title: "BackEnd NodeJs Yelp Camp",
+  //   desc: "Camping website where you can create an account, log in, and post your own camping site for rent. You can set up price and other information, then edit later after passing authenticated and authorized process. As a user, you can leave review and rate the campsite as well so other people can see it",
+  //   highlightFront: [
+  //     "Using EJS Engine to render the basic function campsite",
+  //     "Create boiler plate that apply to different pages",
+  //   ],
+  //   highlightBack: [
+  //     "Using express to create APIs for the application",
+  //     "Manage routes and methods by using epxress-router",
+  //     "Use multer to upload images into local storage",
+  //     "Use session to store basic user info data",
+  //     "Use bcrypt to hash password and compare password",
+  //     "Use password for logging in methods",
+  //   ],
+  //   url: "https://nicolas-pham.online/",
+  //   skills: ["NodeJs", "Express", "EJS", "MongoDB"],
+  //   img: [],
+  //   source: "",
+  // },
   {
     title: "UI/UX Electric Car",
     desc: "Although no APIs are used in this app, it presents an greatly beautiful user interface design. Those little details from blur the content inside the images, the animation at start button and color combination give the comfort toward users",
