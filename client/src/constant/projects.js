@@ -23,7 +23,7 @@ export const projects = [
       social.register,
       social.userInfo,
     ],
-    source: "https://github.com/NicolasPham/social-media",
+    source: "https://socialmedia.nicolas-pham.online/",
   },
   {
     title: "Fullstack MERN Booking App",
