@@ -44,7 +44,7 @@ export const projects = [
     ],
     url: "https://nicolas-pham.online/",
     skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
-    img: [booking.bookingList, booking.bookingSingle, booking.bookingImg],
+    img: [booking.bookingHome,booking.bookingHome2, booking.bookingLogin, booking.bookingList, booking.bookingSingle, booking.bookingImg],
     source: "https://github.com/NicolasPham/bookingapp",
   },
   {
