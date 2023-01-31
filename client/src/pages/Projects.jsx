@@ -86,6 +86,7 @@ const Projects = () => {
                       href={projects[id].source}
                       className="link"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <button>Source Code</button>
                     </a>
@@ -112,7 +113,7 @@ const Projects = () => {
             className="iframeIcon"
             onClick={() => setShoWFrame(false)}
           />
-          <iframe src={projects[id].url}></iframe>
+          <iframe key={projects[id]} src={projects[id].url} title={projects[id].name}></iframe>
         </div>
       )}
     </div>

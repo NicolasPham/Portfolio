@@ -1,4 +1,6 @@
 import * as social from "../assets/socialMedia";
+import * as booking from "../assets/booking";
+import * as blog from "../assets/blog";
 
 export const projects = [
   {
@@ -27,7 +29,7 @@ export const projects = [
   },
   {
     title: "Fullstack MERN Booking App",
-    desc: "AirBnB Clone with basic function from create an account, log in with user info show on the profile page. You can search from different options from hotels, apartments, cabins etc with given parameters such as close by airport, taxi, bedroom. Moreover,you can filter result base on selections from how many adults and children, rooms you would like to book. Then everything will be add to cart and make a payment",
+    desc: "AirBnB Clone with basic function from create an account, log in with user with authorization to reserve. Only admin can delete post. You can search from different options from hotels, apartments, cabins. Moreover,you can filter result base on selections from how many adults and children, rooms you would like to book.",
     highlightFront: [
       "Apply useContext to fetching user info from local storage to display on the website",
       "Use different react libraries such as react-date-range, react-router-dom to give more features",
@@ -42,7 +44,7 @@ export const projects = [
     ],
     url: "https://nicolas-pham.online/",
     skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
-    img: [],
+    img: [booking.bookingList, booking.bookingSingle, booking.bookingImg],
     source: "https://github.com/NicolasPham/bookingapp",
   },
   {
@@ -60,29 +62,29 @@ export const projects = [
     ],
     url: "https://nicolas-pham.online/",
     skills: ["React", "MySQL", "NodeJs", "Express", "Axios"],
-    img: [],
+    img: [blog.blogApp1, blog.blogApp2, blog.blogApp3],
     source: "https://github.com/NicolasPham/BlogApp",
   },
-  {
-    title: "BackEnd NodeJs Yelp Camp",
-    desc: "Camping website where you can create an account, log in, and post your own camping site for rent. You can set up price and other information, then edit later after passing authenticated and authorized process. As a user, you can leave review and rate the campsite as well so other people can see it",
-    highlightFront: [
-      "Using EJS Engine to render the basic function campsite",
-      "Create boiler plate that apply to different pages",
-    ],
-    highlightBack: [
-      "Using express to create APIs for the application",
-      "Manage routes and methods by using epxress-router",
-      "Use multer to upload images into local storage",
-      "Use session to store basic user info data",
-      "Use bcrypt to hash password and compare password",
-      "Use password for logging in methods",
-    ],
-    url: "https://nicolas-pham.online/",
-    skills: ["NodeJs", "Express", "EJS", "MongoDB"],
-    img: [],
-    source: "",
-  },
+  // {
+  //   title: "BackEnd NodeJs Yelp Camp",
+  //   desc: "Camping website where you can create an account, log in, and post your own camping site for rent. You can set up price and other information, then edit later after passing authenticated and authorized process. As a user, you can leave review and rate the campsite as well so other people can see it",
+  //   highlightFront: [
+  //     "Using EJS Engine to render the basic function campsite",
+  //     "Create boiler plate that apply to different pages",
+  //   ],
+  //   highlightBack: [
+  //     "Using express to create APIs for the application",
+  //     "Manage routes and methods by using epxress-router",
+  //     "Use multer to upload images into local storage",
+  //     "Use session to store basic user info data",
+  //     "Use bcrypt to hash password and compare password",
+  //     "Use password for logging in methods",
+  //   ],
+  //   url: "https://nicolas-pham.online/",
+  //   skills: ["NodeJs", "Express", "EJS", "MongoDB"],
+  //   img: [],
+  //   source: "",
+  // },
   {
     title: "UI/UX Electric Car",
     desc: "Although no APIs are used in this app, it presents an greatly beautiful user interface design. Those little details from blur the content inside the images, the animation at start button and color combination give the comfort toward users",
