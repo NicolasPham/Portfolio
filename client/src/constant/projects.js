@@ -16,7 +16,7 @@ export const projects = [
       "Apply SASS to professionally manage and well style application",
     ],
     highlightBack: [],
-    url: "https://nicolas-pham.online/",
+    url: "https://socialmedia.nicolas-pham.online/",
     skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
     img: [
       social.home,
@@ -25,7 +25,7 @@ export const projects = [
       social.register,
       social.userInfo,
     ],
-    source: "https://socialmedia.nicolas-pham.online/",
+    source: "https://github.com/NicolasPham/social-media",
   },
   {
     title: "Fullstack MERN Booking App",
@@ -42,7 +42,7 @@ export const projects = [
       "Use multer to upload pictures combined with cloudinary to stored pictures on cloud",
       "Use axios to connect API side and Client side to create a full stack application",
     ],
-    url: "https://nicolas-pham.online/",
+    url: "https://booking.nicolas-pham.online/",
     skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
     img: [booking.bookingHome,booking.bookingHome2, booking.bookingLogin, booking.bookingList, booking.bookingSingle, booking.bookingImg],
     source: "https://github.com/NicolasPham/bookingapp",
