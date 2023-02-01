@@ -1,6 +1,7 @@
 import * as social from "../assets/socialMedia";
 import * as booking from "../assets/booking";
 import * as blog from "../assets/blog";
+import {workElectricCar, workTinDog, workHoobank} from '../assets';
 
 export const projects = [
   {
@@ -96,7 +97,7 @@ export const projects = [
     highlightBack: [],
     url: "https://electric-car.nicolas-pham.online/",
     skills: ["Tailwind", "Vite", "React-Icons", "JS"],
-    img: [],
+    img: [workElectricCar],
     source:
       "https://github.com/NicolasPham/React-Project/tree/main/ElectricCar",
   },
@@ -111,7 +112,7 @@ export const projects = [
     highlightBack: [],
     url: "https://hoobank.nicolas-pham.online/",
     skills: ["HTML", "CSS", "JS"],
-    img: [],
+    img: [workHoobank],
     source: "https://github.com/NicolasPham/React-Project/tree/main/Hoobank",
   },
   {
@@ -124,7 +125,7 @@ export const projects = [
     highlightBack: [],
     url: "https://tindog.nicolas-pham.online/",
     skills: ["HTML", "CSS", "JS", "Bootstrap"],
-    img: [],
+    img: [workTinDog],
     source:
       "https://github.com/NicolasPham/React-Project/tree/main/TinDog-Start-master",
   },
