@@ -36,10 +36,10 @@ const Contact = () => {
           </p>
 
           <div className="social">
-            <a href="https://www.linkedin.com/in/nicolas-pham-b39b8b15a/"  className="link">
+            <a href="https://github.com/NicolasPham?tab=repositories" className="link" target="_blank" rel="noreferrer">
               <AiFillGithub className="icon" />
             </a>
-            <a href="https://github.com/NicolasPham" className="link">
+            <a href="https://www.linkedin.com/in/nicolas-pham-b39b8b15a/" className="link" target="_blank" rel="noreferrer">
               <AiFillLinkedin className="icon" />
             </a>
           </div>
