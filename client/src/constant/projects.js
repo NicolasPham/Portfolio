@@ -43,7 +43,7 @@ export const projects = [
       "Use multer to upload pictures combined with cloudinary to stored pictures on cloud",
       "Use axios to connect API side and Client side to create a full stack application",
     ],
-    url: "https://booking.nicolas-pham.online/",
+    url: "https://nicolasbooking.herokuapp.com/",
     skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
     img: [booking.bookingHome,booking.bookingHome2, booking.bookingLogin, booking.bookingList, booking.bookingSingle, booking.bookingImg],
     source: "https://github.com/NicolasPham/bookingapp",
