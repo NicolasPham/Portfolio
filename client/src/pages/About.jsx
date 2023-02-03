@@ -37,6 +37,14 @@ const About = () => {
                 <BsFillPatchCheckFill className="check" />
                 Redux
               </span>
+              <span>
+                <BsFillPatchCheckFill className="check" />
+                Bootstrap
+              </span>
+              <span>
+                <BsFillPatchCheckFill className="check" />
+                Tailwind
+              </span>
             </div>
             <hr />
             <div className="details">
@@ -88,6 +96,38 @@ const About = () => {
               <p>- Multer to upload image</p>
               <p>- Cloudinary to store images on cloud</p>
               <p>- Axios to connect backend and frontend</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
+          <h2>Others</h2>
+          <hr />
+          <div className="contain">
+            <div className="tools">
+              <span>
+                <BsFillPatchCheckFill className="check" />
+                Git/GitHub
+              </span>
+              <span>
+                <BsFillPatchCheckFill className="check" />
+                UI/UX
+              </span>
+              <span>
+                <BsFillPatchCheckFill className="check" />
+                Data analyze
+              </span>
+
+            </div>
+            <hr />
+            <div className="details">
+              <p>- Knowledge in Authorization protocols</p>
+              <p>- Knowledge of source management (GitHub)</p>
+              <p>- Knowledge in being able to collect project requirements</p>
+              <p>- Experience with logical data modeling and physical relational database design</p>
+              <p>- Highly organized and detail oriented</p>
+              <p>- Follows the highest standards of compliance and confidentiality</p>
+              <p>- Is able to complete tasks on time</p>
             </div>
           </div>
         </div>
