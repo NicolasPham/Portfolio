@@ -15,7 +15,6 @@
     flex-direction: column;
     margin-top: 30px;
 
-
     .section {
       display: flex;
       flex-direction: column;
@@ -26,13 +25,10 @@
 
       box-shadow: 0px 0px 10px 2px gray;
 
-
-
       &:hover {
         box-shadow: 5px 5px 10px 2px var(--shadowBox);
         transform: translateY(-5px);
       }
-
 
       h2 {
         margin-bottom: 10px;
@@ -45,12 +41,22 @@
         margin-top: 20px;
         gap: 20px;
 
+        @media screen and (max-width: 830px) {
+          flex-direction: column;
+        }
+
         .tools {
           flex: 4;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           gap: 20px;
+
+          @media screen and (max-width: 830px) {
+            gap: 0;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+          }
 
           span {
             display: flex;
