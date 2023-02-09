@@ -6,9 +6,9 @@ import {
 } from "react-icons/bs";
 import { useState } from "react";
 
-const Slider = ({ projectId }) => {
+const Slider = ({ projectId, imageIndex }) => {
   /*******************************************************/
-  const [imgIndex, setImgIndex] = useState(0);
+  const [imgIndex, setImgIndex] = useState(imageIndex);
 
   let maxImg = projects[projectId].img.length;
   const handleSlide = (direction) => {

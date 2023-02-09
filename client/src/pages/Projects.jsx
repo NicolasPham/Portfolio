@@ -6,7 +6,10 @@ import Slider from "../components/Slider";
 
 const Projects = () => {
   const [id, setId] = useState(0);
+  const [imgIndex, setImgIndex] = useState(0);
+
   const handleClick = (e) => {
+    setImgIndex(0);
     const cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
       card.classList = "card";
@@ -100,7 +103,7 @@ const Projects = () => {
                 </div>
               </div>
               <div className="slider">
-                <Slider projectId={id} />
+                <Slider projectId={id} imageIndex={imgIndex} />
               </div>
             </div>
           )}

@@ -24,7 +24,7 @@ const Home = () => {
         </motion.span>
         <motion.span
           initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity:1 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1, delay: 3 }}
         >
           A <font>FullStack</font> Developer
@@ -34,8 +34,8 @@ const Home = () => {
         <motion.img
           src={hello}
           alt=""
-          initial={{ y: -1000 }}
-          animate={{ y: 0 }}
+          initial={{ y: -1000, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1, delay: 1 }}
         />
         <div />
