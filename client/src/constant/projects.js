@@ -1,9 +1,51 @@
+import * as image from '../assets/openAI';
 import * as social from "../assets/socialMedia";
 import * as booking from "../assets/booking";
 import * as blog from "../assets/blog";
 import {workElectricCar, workTinDog, workHoobank} from '../assets';
 
+
 export const projects = [
+  {
+    title: "FullStack AI Image Generation",
+    desc: "Use OpenAI API to generate image base on give prompt, then give it the feature to share as well as to download.",
+    highlightFront: [
+      "Use Vite framework to make it more convenient creating new website",
+      "Apply tailwind to styling website faster, as well as create a reusable styling libraries",
+      "Display images in an interesting and friendly user interface grid form",
+    ],
+    highlightBack: [
+      "Connect to openAI api to generate images base on the given prompg",
+      "Create Schemas with various types of data in Mongo Atlas (Cloud MongoDB)",
+      "Use router to create a semantic methods for different actions in backend side",
+      "Use multer to upload pictures combined with cloudinary to stored pictures on cloud",
+      "Use axios to connect API side and Client side to create a full stack application",
+    ],
+    url: "https://image-generation.nicolas-pham.online/",
+    skills: ["AI","React", "API", "NodeJs", "MongoDB", "Axios"],
+    img: [image.home, image.create],
+    source: "https://github.com/NicolasPham/imageGeneration",
+  },
+  {
+    title: "Fullstack MERN Booking App",
+    desc: "AirBnB Clone with basic function from create an account, log in with user with authorization to reserve. Only admin can delete post. You can search from different options from hotels, apartments, cabins. Moreover,you can filter result base on selections from how many adults and children, rooms you would like to book.",
+    highlightFront: [
+      "Apply useContext to fetching user info from local storage to display on the website",
+      "Use different react libraries such as react-date-range, react-router-dom to give more features",
+      "Apply SASS to manage and  style web site professionally",
+    ],
+    highlightBack: [
+      "Create Schemas with various types of data in Mongo Atlas (Cloud MongoDB)",
+      "Use router to create a semantic methods for different actions in backend side",
+      "Hash password then stored it in the DB instead of raw password",
+      "Use multer to upload pictures combined with cloudinary to stored pictures on cloud",
+      "Use axios to connect API side and Client side to create a full stack application",
+    ],
+    url: "https://nicolasbooking.herokuapp.com/",
+    skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
+    img: [booking.bookingHome,booking.bookingHome2, booking.bookingLogin, booking.bookingList, booking.bookingSingle, booking.bookingImg],
+    source: "https://github.com/NicolasPham/bookingapp",
+  },
   {
     title: "FrontEnd Social Media",
     desc: "A social media that allow you to register for an account, sign in as well as interact with your friends. There are different features come along such as showing who are online, what are suggested for you base on your info. You can also fetch the user data by click into their icon",
@@ -27,26 +69,6 @@ export const projects = [
       social.userInfo,
     ],
     source: "https://github.com/NicolasPham/social-media",
-  },
-  {
-    title: "Fullstack MERN Booking App",
-    desc: "AirBnB Clone with basic function from create an account, log in with user with authorization to reserve. Only admin can delete post. You can search from different options from hotels, apartments, cabins. Moreover,you can filter result base on selections from how many adults and children, rooms you would like to book.",
-    highlightFront: [
-      "Apply useContext to fetching user info from local storage to display on the website",
-      "Use different react libraries such as react-date-range, react-router-dom to give more features",
-      "Apply SASS to manage and  style web site professionally",
-    ],
-    highlightBack: [
-      "Create Schemas with various types of data in Mongo Atlas (Cloud MongoDB)",
-      "Use router to create a semantic methods for different actions in backend side",
-      "Hash password then stored it in the DB instead of raw password",
-      "Use multer to upload pictures combined with cloudinary to stored pictures on cloud",
-      "Use axios to connect API side and Client side to create a full stack application",
-    ],
-    url: "https://nicolasbooking.herokuapp.com/",
-    skills: ["React", "Redux", "NodeJs", "MongoDB", "Axios"],
-    img: [booking.bookingHome,booking.bookingHome2, booking.bookingLogin, booking.bookingList, booking.bookingSingle, booking.bookingImg],
-    source: "https://github.com/NicolasPham/bookingapp",
   },
   {
     title: "Fullstack MySQL Blog App",

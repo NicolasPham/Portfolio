@@ -13,21 +13,29 @@
     filter: blur(0) opacity(0.7);
   }
 
+  @media screen and (max-width:830px) {
+  }
+
 
   .logo {
     font-family: var(--font1);
     font-size: var(--h1);
     font-weight: bold;
     color: var(--textColor2);
+
   }
   .nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 40px;
+
+    .menu {
+      font-size: 2rem;
+      color: var(--textColor2);
+    }
   
   .navSection {
-    // padding: 5px 20px;
     cursor: pointer;
 
     display: flex;
@@ -36,7 +44,7 @@
     font-size: var(--h2);
 
     &:hover {
-      transform: translateY(-2px) scale(1.1);
+      transform: translateY(-2px);
       color: #ffd56f;
     }
 

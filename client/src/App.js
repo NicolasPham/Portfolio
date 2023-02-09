@@ -19,7 +19,7 @@ function App() {
   return (
     <div className={`app ${mode ? "theme-light" : "theme-dark"}`}>
       <Router>
-        <Navbar className="navIcon" mode={mode} changeMode={changeMode} />
+        <Navbar mode={mode} changeMode={changeMode} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
+
+import {GiHamburgerMenu} from 'react-icons/gi';
 
 //Import icons
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
@@ -26,18 +28,21 @@ const nav = [
 
 const Navbar = (props) => {
 
+  const [showMenu, setShowMenu] = useState(true);
+
   return (
     <nav className="navbar">
       <Link to='/' className="link" >
-      <div className="logo">
+      {!showMenu && <div className="logo">
         <span>NICOLAS PHAM</span>
-      </div>
+      </div>}
       </Link>
 
       <div className="nav">
-          
-      {nav.map((item, index) => (
-        <Link to={item.link} className="link" key={index}>
+        <GiHamburgerMenu className="menu" onClick={() => setShowMenu(!showMenu)}/>
+            
+      {showMenu && nav.map((item, index) => (
+        <Link to={item.link} className="link" key={index} onClick={() => setShowMenu(!showMenu)}>
         <div className="navSection">
           {item.name}
         </div>

@@ -3,7 +3,6 @@ import "./Projects.scss";
 import { projects } from "../constant/projects";
 import { motion } from "framer-motion";
 import Slider from "../components/Slider";
-import { AiFillCloseCircle } from "react-icons/ai";
 
 const Projects = () => {
   const [id, setId] = useState(0);
@@ -32,10 +31,6 @@ const Projects = () => {
     }),
     hidden: { opacity: 0, x: -200 },
   };
-
-  /***************Show iframe***************************/
-  const [showFrame, setShoWFrame] = useState(false);
-  console.log(showFrame);
 
   /*****************************************************/
   return (
@@ -79,9 +74,14 @@ const Projects = () => {
                   </div>
 
                   <div className="button">
-                    <button onClick={() => setShoWFrame(true)}>
-                      Live Demo
-                    </button>
+                    <a
+                      href={projects[id].url}
+                      className="link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button>Live Demo</button>
+                    </a>
                     <a
                       href={projects[id].source}
                       className="link"
@@ -106,16 +106,6 @@ const Projects = () => {
           )}
         </div>
       </div>
-
-      {showFrame && (
-        <div className="iframe" onClick={() => setShoWFrame(false)}>
-          <AiFillCloseCircle
-            className="iframeIcon"
-            onClick={() => setShoWFrame(false)}
-          />
-          <iframe key={projects[id]} src={projects[id].url} title={projects[id].name}></iframe>
-        </div>
-      )}
     </div>
   );
 };
