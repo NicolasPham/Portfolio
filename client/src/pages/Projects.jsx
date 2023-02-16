@@ -39,6 +39,8 @@ const Projects = () => {
   return (
     <div className="projects">
       <h1>MY PROJECTS</h1>
+      <p>Please allow appro. 30s for loading server</p>
+      <p>Might even need to reload sometimes</p>
       <div className="content">
         <div className="container">
           {projects.map((project, i) => (
@@ -94,6 +96,7 @@ const Projects = () => {
                       <button>Source Code</button>
                     </a>
                   </div>
+                  
                 </div>
 
                 <div className="skills">

@@ -21,6 +21,12 @@
       display: none;
     }
   }
+  p {
+    align-self: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--textColor3);
+  }
 
   .content {
     width: 100%;
