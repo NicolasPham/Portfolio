@@ -1,4 +1,5 @@
 import * as image from '../assets/openAI';
+import * as chat from '../assets/chatGPT';
 import * as social from "../assets/socialMedia";
 import * as booking from "../assets/booking";
 import * as blog from "../assets/blog";
@@ -25,6 +26,23 @@ export const projects = [
     skills: ["AI","React", "API", "NodeJs", "MongoDB", "Axios"],
     img: [image.home, image.create],
     source: "https://github.com/NicolasPham/imageGeneration",
+  },
+  {
+    title: "AI Coding ChatGPT",
+    desc: "Use OpenAI API answer all the questions about Coding with Codex",
+    highlightFront: [
+      "Use Vite framework to make it more convenient creating new website",
+      "Apply tailwind to styling website faster, as well as create a reusable styling libraries",
+      "Desgin a responsive UI/UX chat page",
+    ],
+    highlightBack: [
+      "Connect to openAI api to generate coding answer base on the given prompg",
+      "Use axios to connect API side and Client side to create a full stack application",
+    ],
+    url: "http://chatgpt.nicolas-pham.online/",
+    skills: ["AI", "API", "NodeJs", "Axios"],
+    img: [chat.chat1, chat.chat2],
+    source: "https://github.com/NicolasPham/chatGPT",
   },
   {
     title: "Fullstack MERN Booking App",
