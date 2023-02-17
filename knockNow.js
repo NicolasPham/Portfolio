@@ -1,6 +1,6 @@
 /**
  * Since I don't know what type of data will be in the input, 
- * So I will do in different scenario
+ * So I will do it as an array of string as variable data below
  */
 
 /**
@@ -64,8 +64,6 @@ for (let i = 0; i < convertedData.length; i++) {
             }
         }
     }
-
-    
 }//Loop to get mostrecent List
 
 for (let i=0; i < mostRecentList.length; i++) {
