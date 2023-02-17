@@ -15,7 +15,7 @@
  */
 
 
-const data = [
+const input = [
   "L4, 123 kings road,2022",
   "L1, 123 kings road,2020",
   "L2, 20 queen road,1990",
@@ -37,37 +37,48 @@ let addressList=[];
 let mostRecentList = [];
 const output = [];
 
-for (let i = 0; i < data.length; i++) {
-    const item = data[i].split(',');
+
+const convertedInput = (input) => {
+    for (let i = 0; i < input.length; i++) {
+        const item = input[i].split(',');
+        
+        convertedData.push({
+            name: item[0],
+            address: item[1].trim(),
+            date: parseInt(item[2])
+        });
+    } //Loop to convert data to array of object
+}
+
+const outputObject = (data) => {
+    for (let i = 0; i < data.length; i++) {
+        currentAddress = data[i].address
+        date = data[i].date;
+        currentName = convertedData[i].name;
     
-    convertedData.push({
-        name: item[0],
-        address: item[1].trim(),
-        date: parseInt(item[2])
-    });
-
-    
-} //Loop to convert data to array of object
-
-for (let i = 0; i < convertedData.length; i++) {
-    currentAddress = convertedData[i].address
-    date = convertedData[i].date;
-    currentName = convertedData[i].name;
-
-    if (!addressList.includes(currentAddress)) {
-        addressList.push(currentAddress);
-        mostRecentList.push(convertedData[i])
-    } else {
-        for (let j = 0; j < mostRecentList.length; j++) {
-            if(currentAddress === mostRecentList[j].address) {
-                if (mostRecentList[j].date < date) mostRecentList[j].name = currentName
+        if (!addressList.includes(currentAddress)) {
+            addressList.push(currentAddress);
+            mostRecentList.push(data[i])
+        } else {
+            for (let j = 0; j < mostRecentList.length; j++) {
+                if(currentAddress === mostRecentList[j].address) {
+                    if (mostRecentList[j].date < date) mostRecentList[j].name = currentName
+                }
             }
         }
-    }
-}//Loop to get mostrecent List
+    }//Loop to get most recent List
+}
 
-for (let i=0; i < mostRecentList.length; i++) {
-    output.push(mostRecentList[i].name)
-} //Loop to get listName only
+const getAnswer = (recentList) => {
+    for (let i=0; i < recentList.length; i++) {
+        output.push(recentList[i].name)
+    } //Loop to get listName only
+}
+
+
+//Execute:
+convertedInput(input);
+outputObject(convertedData);
+getAnswer(mostRecentList);
 
 console.log(output)
