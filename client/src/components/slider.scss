@@ -1,24 +1,47 @@
 .slide {
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .iconWrapper {
+    position: absolute;
     width: 100%;
-    height: 100%;
-    gap: 20px;
+    height: 80px;
+    background-color: transparent;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
+    &:hover {
+      background-color: lightgray;
+      opacity: 0.3;
+    }
 
     .slideIcon {
-        font-size: 30px;
-        opacity: .5;
-        cursor: pointer;
-        color: gray;
+      font-size: 30px;
+      opacity: 0.5;
+      color: gray;
+      width: 100%;
     }
+  }
 
-    img {
-        width: 100%;
-        height: auto;
-        max-height: 80%;
-        object-fit: cover;
-    }
+  .up {
+    top: 0;
+  }
+
+  .down {
+    bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

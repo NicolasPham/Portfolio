@@ -21,17 +21,18 @@ const Slider = ({ projectId, imageIndex }) => {
   /*******************************************************/
   return (
     <div className="slide">
-      <BsFillArrowUpCircleFill
-        className="slideIcon"
-        onClick={() => handleSlide("up")}
-      />
+      {projects[projectId].img.length > 1 && (
+        <div className="iconWrapper up" onClick={() => handleSlide("up")}>
+          <BsFillArrowUpCircleFill className="slideIcon" />
+        </div>
+      )}
 
       <img src={projects[projectId].img[imgIndex]} alt="" />
-
-      <BsFillArrowDownCircleFill
-        className="slideIcon"
-        onClick={() => handleSlide("down")}
-      />
+      {projects[projectId].img.length > 1 && (
+        <div className="iconWrapper down" onClick={() => handleSlide("down")}>
+          <BsFillArrowDownCircleFill className="slideIcon" />
+        </div>
+      )}
     </div>
   );
 };
