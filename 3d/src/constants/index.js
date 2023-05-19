@@ -18,6 +18,7 @@ import {
   meta,
   starbucks,
   tesla,
+  freelancer,
   shopify,
   carrent,
   jobit,
@@ -46,19 +47,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "FullStack Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "FrontEnd React Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend NodeJS Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "DataBase",
     icon: creator,
   },
 ];
@@ -76,10 +77,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -100,29 +101,29 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Front End Developer",
+    company_name: "Practical Project",
+    icon: freelancer,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -135,7 +136,7 @@ const experiences = [
   {
     title: "React Native Developer",
     company_name: "Tesla",
-    icon: tesla,
+    icon: freelancer,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -148,7 +149,7 @@ const experiences = [
   {
     title: "Web Developer",
     company_name: "Shopify",
-    icon: shopify,
+    icon: freelancer,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -161,7 +162,7 @@ const experiences = [
   {
     title: "Full stack Developer",
     company_name: "Meta",
-    icon: meta,
+    icon: freelancer,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
