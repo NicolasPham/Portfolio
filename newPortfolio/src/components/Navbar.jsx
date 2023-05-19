@@ -31,7 +31,7 @@ const Navbar = () => {
               key={`navLink-${link.id}`}
               className="cursor-pointer hover:text-light hover:translate-y-[-1px]"
             >
-              <a href={link.id}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>

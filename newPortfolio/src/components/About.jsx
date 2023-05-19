@@ -19,14 +19,14 @@ const SkillCard = ({ skill }) => {
         transitionSpeed={200}
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
-        className="mt-20 black-gradient px-7 py-5 rounded-2xl 
-      shadow-card border-secondary border-2"
+        className="mt-10 black-gradient px-7 py-5 rounded-2xl 
+      shadow-card border-secondary border-2 lg:h-full"
       >
         <h1 className="text-[30px] text-primary mb-[10px] font-[700] tracking-wide">
           {skill.title}
         </h1>
-        {skill.skills.map((item) => (
-          <p key={`frontEnd-${skill.id}`} className="text-light leading-8">
+        {skill.skills.map((item, index) => (
+          <p key={`${skill.title}-${index}`} className="text-light leading-8">
             {item}
           </p>
         ))}
@@ -50,7 +50,7 @@ const About = () => {
         closely with clients and team members to create efficient, scalable, and
         user-friendly solutions that solve real-world problem.
       </motion.p>
-      <div>
+      <div className="lg:grid grid-cols-3 grid-rows-1 gap-4">
         {aboutCard.map((skill) => (
           <SkillCard skill={skill} key={`about-${skill.id}`} />
         ))}
