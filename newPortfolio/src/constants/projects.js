@@ -3,6 +3,7 @@ import * as chat from "../assets/chatGPT";
 import * as social from "../assets/socialMedia";
 import * as booking from "../assets/booking";
 import * as blog from "../assets/blog";
+import * as eCom from "../assets/ecommerce";
 
 export const projects = [
   {
@@ -31,6 +32,26 @@ export const projects = [
       booking.bookingImg,
     ],
     source: "https://github.com/NicolasPham/bookingapp",
+  },
+  {
+    title: "Fullstack Shopping Online",
+    desc: "A website allows you to shop clothes and accessories online, products also can be filtered by gender, types, etc. with a checkout cart that update as you add products",
+    highlightFront: [
+      "Using redux to store products that added to cart, then render them in a cart component",
+      "Apply handle functions to filter products as customer want",
+      "Apply SASS to manage and  style web site professionally",
+    ],
+    highlightBack: [
+      "Create Schemas with various types of data in mySQL",
+      "Use router to create a semantic methods for different actions in backend side",
+      "Use Stripe for check out method",
+      "Using Strapi for faster SQL methods",
+      "Use axios to connect API side and Client side to create a full stack application",
+    ],
+    url: "",
+    skills: ["React", "Redux", "NodeJs", "MySQL", "Axios", "Strapi", "Stripe"],
+    img: [eCom.eCom1, eCom.eCom2, eCom.eCom3, eCom.eCom4, eCom.eCom5],
+    source: "https://github.com/NicolasPham/eCommerce",
   },
   {
     title: "FullStack AI Image Generation",

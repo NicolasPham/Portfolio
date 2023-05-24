@@ -13,7 +13,7 @@ const SkillCard = ({ skill }) => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      variants={zoomIn(0.5 * skill.id, 1)}
+      variants={zoomIn(0, 1)}
     >
       <Tilt
         transitionSpeed={200}
