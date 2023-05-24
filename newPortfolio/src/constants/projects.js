@@ -127,7 +127,7 @@ export const projects = [
       "Use SQL to Create, Read, Update and Delete data",
       "Using mysql node package to combine SQL into React app to interact with database",
     ],
-    url: "https://nicolas-pham.online/",
+    url: "",
     skills: ["React", "MySQL", "NodeJs", "Express", "Axios"],
     img: [blog.blogApp1, blog.blogApp2, blog.blogApp3],
     source: "https://github.com/NicolasPham/BlogApp",
