@@ -61,3 +61,20 @@ export const aboutCard = [
     skills: otherskills,
   },
 ];
+
+
+// Contact ==========================
+export const contact = [
+  {
+    title: "Name",
+    info: "Nicolas Pham"
+  },
+  {
+    title: "Email",
+    info: "phd.ngoc163@gmail.com"
+  },
+  {
+    title: "Phone",
+    info: "+1 (437) 984 4400"
+  }
+]
